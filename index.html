@@ -4,172 +4,372 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deepak Gupta | Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    rel="stylesheet"
-  />
+  <script defer src="script.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
 
+  <!-- Background Glow -->
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+  <div class="grid-overlay"></div>
+
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">Deepak Gupta</div>
+    <div class="logo">&lt;<span>Deepak</span>/Gupta&gt;</div>
+
     <nav>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <div class="nav-icons">
+        <a href="https://github.com/Deepakg1109" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/deepakg110903/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+
       <div class="menu-toggle"><i class="fas fa-bars"></i></div>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <p class="intro">Hello, I'm</p>
-      <h1>Deepak Gupta</h1>
-      <h2><span id="typing"></span></h2>
-      <p class="tagline">
-        Passionate Problem-Solver | Building Real-World Solutions
+  <!-- HERO -->
+  <section class="hero section" id="home">
+    <div class="hero-left reveal">
+      <p class="hero-small">HELLO, I’M</p>
+      <h1>Deepak<br />Gupta</h1>
+
+      <h2>I am a <span id="typing"></span></h2>
+
+      <p class="hero-description">
+        A passionate Computer Science Engineer focused on
+        <strong>Java development, networking, cybersecurity, Linux, SEO, and problem-solving</strong>.
+        I enjoy building practical systems and real-world technical solutions.
       </p>
 
       <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn secondary">Hire Me</a>
-      </div>
-
-      <div class="social-icons">
-        <a href="https://github.com/Deepakg1109" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/deepakg110903/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:deepakgupta24224@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="resume.pdf" target="_blank" class="btn btn-primary">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <a href="#projects" class="btn btn-secondary">
+          <i class="fas fa-code"></i> View Projects
+        </a>
       </div>
     </div>
 
-    <div class="hero-image">
-      <div class="profile-card">
+    <div class="hero-right reveal">
+      <div class="profile-frame">
         <img src="images/profile.jpg" alt="Deepak Gupta" />
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="section" id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="card">
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <div class="section-header">
+      <h2>ABOUT</h2>
+      <div class="underline"></div>
       <p>
-        I am a passionate <strong>Computer Science Engineer</strong> with a strong foundation in 
-        <strong>networking, cybersecurity, Java development, and problem-solving</strong>. 
+        A quick introduction about who I am and what I bring to the table.
+      </p>
+    </div>
+
+    <div class="glass-card about-card">
+      <p>
+        I am a passionate <strong>Computer Science Engineer</strong> with a strong foundation in
+        <strong>networking, cybersecurity, Java development, and problem-solving</strong>.
         I enjoy building real-world solutions that are practical, efficient, and impactful.
-        With strong analytical thinking, creativity, and adaptability, I am committed to 
-        continuously improving my skills and contributing to meaningful technology-driven projects.
+        With strong analytical thinking, creativity, and adaptability, I am committed to continuously
+        improving my skills and contributing to meaningful technology-driven projects.
       </p>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section class="section" id="skills">
-    <h2 class="section-title">Skills & Tools</h2>
+  <!-- SKILLS -->
+<!--    
+  <section id="skills" class="section reveal">
+    <div class="section-header">
+      <h2>SKILLS</h2>
+      <div class="underline"></div>
+      <p>
+        My technical capabilities across software, systems, networking, and security.
+      </p>
+    </div>
+  <-- Programming -->
+  <section id="skills" class="section reveal">
+  <div class="section-header">
+    <h2>SKILLS</h2>
+    <div class="underline"></div>
+    <p>
+      My technical capabilities across programming, networking, network security, and modern development tools.
+    </p>
+  </div>
 
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>Java Programming</li>
-          <li>Data Structures & Algorithms</li>
-          <li>Networking</li>
-          <li>Linux</li>
-          <li>Search Engine Optimization (SEO)</li>
-          <li>Cisco Packet Tracer</li>
-        </ul>
-      </div>
+  <div class="skills-grid">
 
-      <div class="skill-card">
-        <h3>Tools & Platforms</h3>
-        <ul>
-          <li>VS Code</li>
-          <li>AWS</li>
-          <li>Vercel</li>
-          <li>MySQL</li>
-          <li>GitHub</li>
-          <li>Canva</li>
-          <li>Figma</li>
-        </ul>
+    <!-- Programming -->
+    <div class="glass-card skill-box">
+      <h3>Programming</h3>
+      <div class="skill-tags icon-tags">
+        <span class="java"><i class="fab fa-java"></i> Java</span>
+        <span class="dsa"><i class="fas fa-code"></i> DSA</span>
+        <span class="html"><i class="fab fa-html5"></i> HTML</span>
+        <span class="css"><i class="fab fa-css3-alt"></i> CSS</span>
+        <span class="js"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="sql"><i class="fas fa-database"></i> SQL</span>
+        <span class="maven"><i class="fas fa-cubes"></i> Maven</span>
       </div>
     </div>
-  </section>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <h2 class="section-title">Projects</h2>
+    <!-- Networking -->
+    <div class="glass-card skill-box">
+      <h3>Networking</h3>
+      <div class="skill-tags icon-tags">
+        <span class="networking"><i class="fas fa-network-wired"></i> Networking</span>
+        <span class="cisco"><i class="fas fa-server"></i> Cisco Packet Tracer</span>
+        <span class="vlan"><i class="fas fa-sitemap"></i> VLAN</span>
+        <span class="vpn"><i class="fas fa-shield-halved"></i> VPN</span>
+        <span class="nat"><i class="fas fa-route"></i> NAT</span>
+        <span class="routing"><i class="fas fa-arrows-rotate"></i> Routing</span>
+            <span class="security"><i class="fas fa-lock"></i> Network Security</span>
+        <span class="firewall"><i class="fas fa-fire"></i> Firewall Concepts</span>
+        <span class="architecture"><i class="fas fa-building-shield"></i> Secure Architecture</span>
+      </div>
+    </div>
 
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>MarketHub</h3>
+    <!-- Tools -->
+    <div class="glass-card skill-box">
+      <h3>Tools</h3>
+      <div class="skill-tags icon-tags">
+        <span class="vscode"><i class="fas fa-code"></i> VS Code</span>
+        <span class="github"><i class="fab fa-github"></i> GitHub</span>
+        <span class="aws"><i class="fab fa-aws"></i> AWS</span>
+        <span class="vercel"><i class="fas fa-cloud"></i> Vercel</span>
+        <span class="mysql"><i class="fas fa-database"></i> MySQL</span>
+        <span class="canva"><i class="fas fa-palette"></i> Canva</span>
+        <span class="figma"><i class="fab fa-figma"></i> Figma</span>
+        <span class="linux"><i class="fab fa-linux"></i> Linux</span>
+        <span class="seo"><i class="fas fa-magnifying-glass-chart"></i> SEO</span>
+        <span class="postman"><i class="fas fa-paper-plane"></i> Postman</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section reveal">
+    <div class="section-header">
+      <h2>EXPERIENCE & TRAINING</h2>
+      <div class="underline"></div>
+      <p>
+        Certifications, workshops, and hands-on technical exposure that shaped my foundation.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-card glass-card left">
+        <h3>Networking & Cyber Security Training</h3>
+        <h4>Solitaire Infosys Pvt. Ltd., Mohali</h4>
+        <span>Training</span>
         <p>
-          An online product buying and selling platform with product listing,
-          search, buy, add, and delete features integrated with database support.
+          Gained practical exposure to network security concepts, cyber defense basics,
+          and secure communication practices.
         </p>
-        <p><strong>Tech Stack:</strong> Java, Spring Boot, MySQL, HTML, CSS, JavaScript, Maven</p>
-        <a href="https://github.com/Deepakg1109/Markethub" target="_blank" class="project-btn">View Project</a>
       </div>
 
-      <div class="project-card">
-        <h3>Network Security Project</h3>
+      <div class="timeline-card glass-card right">
+        <h3>Ethical Hacking Training</h3>
+        <h4>Solitaire Infosys Pvt. Ltd., Mohali</h4>
+        <span>Training</span>
         <p>
-          Designed and implemented a secure network architecture for a small business
-          using segmentation, VPN, NAT, VLANs, and firewall layers.
+          Learned core ethical hacking principles, attack surface awareness, and basic
+          security testing approaches in a controlled environment.
         </p>
-        <p><strong>Tech Stack:</strong> Cisco Packet Tracer, Firewall, VPN, VLANs, NAT</p>
-        <a href="#" class="project-btn">Project Showcase</a>
+      </div>
+
+      <div class="timeline-card glass-card left">
+        <h3>Advanced Computer Networks</h3>
+        <h4>NPTEL / SWAYAM</h4>
+        <span>Certification</span>
+        <p>
+          Studied modern networking concepts including communication models, routing,
+          and advanced network-level understanding.
+        </p>
+      </div>
+
+      <div class="timeline-card glass-card right">
+        <h3>International Workshop on Machine Learning</h3>
+        <h4>Workshop</h4>
+        <span>Participation</span>
+        <p>
+          Explored practical and conceptual applications of machine learning in modern systems.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Education -->
-  <section class="section" id="education">
-    <h2 class="section-title">Education</h2>
-
-    <div class="education-card">
-      <h3>Bachelor of Technology (B.Tech) - Computer Science & Engineering</h3>
-      <p>RPS College of Engineering and Technology, Mahendergarh, Haryana</p>
-      <span>2021 - 2025</span>
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <div class="section-header">
+      <h2>PROJECTS</h2>
+      <div class="underline"></div>
+      <p>
+        Selected projects that reflect my technical skills and practical problem-solving ability.
+      </p>
     </div>
 
-    <div class="education-card">
-      <h3>Senior Secondary (12th) - Non Medical</h3>
-      <p>Aishly Public School, Ateli Mandi, Haryana</p>
-      <span>2020 - 2021 | CBSE Board</span>
+    <div class="projects-grid">
+
+      <div class="glass-card project-card">
+  
+  <div class="project-slider">
+    <img src="images/markethub-home.png" class="slide active" />
+    <img src="images/markethub-add.png" class="slide" />
+  </div>
+
+  <div class="project-content">
+    <h3>MarketHub – Online Marketplace Platform</h3>
+
+    <p>
+      A full-stack web application that allows users to buy, sell, and manage products.
+      Includes product listing, search functionality, add/delete products, and database integration.
+    </p>
+
+    <div class="project-tags">
+      <span>Java</span>
+      <span>Spring Boot</span>
+      <span>MySQL</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Maven</span>
+      <span>CRUD</span>
+      <span>Forms</span>        
+      <span>Database</span>
+      <span>Frontend UI</span>
+      <span>CRUD Operations</span>
     </div>
 
-    <div class="education-card">
-      <h3>Matriculation (10th Standard)</h3>
-      <p>Aishly Public School, Ateli Mandi, Haryana</p>
-      <span>2018 - 2019 | CBSE Board</span>
+    <div class="project-links">
+      <a href="https://github.com/Deepakg1109/Markethub" target="_blank">GitHub</a>
+      <a href="https://deepakg1109.github.io/Markethub/index.html" target="_blank">Live Demo</a>
+    </div>
+  </div>
+</div>
+
+      <div class="glass-card project-card">
+        <img src="images/network-security.png" alt="Network Security Project" class="project-image" />
+        <div class="project-content">
+          <h3>Network Security Architecture</h3>
+          <p>
+            Designed a secure enterprise-style network architecture for a small business
+            using VLANs, VPN, NAT, firewalls, segmentation, and secure remote access.
+          </p>
+
+          <div class="skill-tags project-tags">
+            <span>Cisco Packet Tracer</span>
+            <span>VLAN</span>
+            <span>VPN</span>
+            <span>NAT</span>
+            <span>Firewall</span>
+            <span>Secure Design</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#contact">Ask for Details</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <h2 class="section-title">Contact Me</h2>
+  <!-- EDUCATION -->
+  <section id="education" class="section reveal">
+    <div class="section-header">
+      <h2>EDUCATION</h2>
+      <div class="underline"></div>
+      <p>
+        My academic journey that built the foundation of my technical knowledge.
+      </p>
+    </div>
 
-    <div class="contact-card">
-      <p><i class="fas fa-envelope"></i> deepakgupta24224@gmail.com</p>
-      <p><i class="fas fa-phone"></i> 9053148835 / 7015788207</p>
-      <p><i class="fab fa-github"></i> github.com/Deepakg1109</p>
-      <p><i class="fab fa-linkedin"></i> linkedin.com/in/deepakg110903</p>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-card glass-card left">
+        <h3>B.Tech in Computer Science & Engineering</h3>
+        <h4>RPS College of Engineering and Technology</h4>
+        <span>2021 – 2025</span>
+        <p>Mahendergarh, Haryana</p>
+      </div>
+
+      <div class="timeline-card glass-card right">
+        <h3>Senior Secondary (12th) – Non-Medical</h3>
+        <h4>Aishly Public School</h4>
+        <span>2020 – 2021 | CBSE</span>
+        <p>Ateli Mandi, Haryana</p>
+      </div>
+
+      <div class="timeline-card glass-card left">
+        <h3>Matriculation (10th Standard)</h3>
+        <h4>Aishly Public School</h4>
+        <span>2018 – 2019 | CBSE</span>
+        <p>Ateli Mandi, Haryana</p>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <div class="section-header">
+      <h2>CONTACT</h2>
+      <div class="underline"></div>
+      <p>
+        Let’s connect for opportunities, collaborations, or technical discussions.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="glass-card contact-info">
+        <h3>Get in Touch</h3>
+        <p><i class="fas fa-envelope"></i> deepakgupta24224@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 9053148835 / 7015788207</p>
+        <p><i class="fas fa-location-dot"></i> Ateli Mandi, Mahendergarh, Haryana</p>
+        <p><i class="fab fa-github"></i> github.com/Deepakg1109</p>
+        <p><i class="fab fa-linkedin"></i> linkedin.com/in/deepakg110903</p>
+      </div>
+
+      <form class="glass-card contact-form" action="https://formspree.io/f/xjkobdgn" method="POST">
+        <h3>Send a Message</h3>
+
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+
+        <button type="submit" class="btn btn-primary full-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Deepak Gupta. All Rights Reserved.</p>
+    <p>© 2026 Deepak Gupta. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
