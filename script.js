@@ -74,3 +74,39 @@ setInterval(() => {
 
   slides[slideIndex].classList.add("active");
 }, 2500);
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const btn = contactForm.querySelector("button");
+    btn.innerText = "Sending...";
+    btn.disabled = true;
+
+    emailjs.sendForm(
+      "service_fy62maq",
+      "template_62x8qny",
+      this
+    )
+    .then(() => {
+      btn.innerText = "Message Sent ✅";
+      contactForm.reset();
+
+      setTimeout(() => {
+        btn.innerText = "Send Message";
+        btn.disabled = false;
+      }, 2000);
+    })
+    .catch((error) => {
+      btn.innerText = "Failed ❌";
+      console.error("EmailJS Error:", error);
+
+      setTimeout(() => {
+        btn.innerText = "Send Message";
+        btn.disabled = false;
+      }, 2000);
+    });
+  });
+}
