@@ -75,6 +75,8 @@ setInterval(() => {
   slides[slideIndex].classList.add("active");
 }, 2500);
 
+
+
 const contactForm = document.getElementById("contact-form");
 
 if (contactForm) {
